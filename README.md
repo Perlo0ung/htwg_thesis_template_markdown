@@ -20,7 +20,10 @@ __Quellen__ werden mit der Datei ```resources/thesis.bib``` gemanaged.
 
 Der Style der Arbeit ist definiert durch die Datei ```resources/ba_template.tex```, dies ist das Standard Markdown zu PDF Template von Pandoc und wurde fürs schreiben der Thesis speziell angepasst.
 
+## Wichtiges
 
+* Jedes Markdowndokument mit einer leeren Zeile abschließen
+* Kapitel die nicht als Chapter erkannt werden sollen müssen mit Latech definiert werden (siehe 998-thx.md)
 
 ## Known Bugs
 
