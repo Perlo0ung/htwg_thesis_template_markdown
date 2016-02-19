@@ -20,6 +20,31 @@ __Quellen__ werden mit der Datei ```resources/thesis.bib``` gemanaged.
 
 Der Style der Arbeit ist definiert durch die Datei ```resources/ba_template.tex```, dies ist das Standard Markdown zu PDF Template von Pandoc und wurde fürs schreiben der Thesis speziell angepasst.
 
+
+## Dokument erstellen
+
+Entweder:
+
+* Sript nutzen ```python build.py```
+
+oder:
+
+* Kommandozeile
+```
+pandoc -p 
+      -f markdown 
+      --csl=resources/ieee.csl 
+      --chapters 
+      --number-sections 
+      --include-before-body=resources/startthesis.tex 
+      --include-after-body=resources/appendix.tex 
+      --template=resources/ba_template.tex 
+      -o result.pdf 
+      --bibliography resources/thesis.bib 
+      settings.yaml 100-chapter1.md 200-chapter2.md 300-chapter3.md 998-thx.md 999-literatur.md
+````
+
+
 ## Wichtiges
 
 * Jedes Markdowndokument mit einer leeren Zeile abschließen
