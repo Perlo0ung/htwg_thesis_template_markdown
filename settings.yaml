@@ -1,0 +1,32 @@
+---
+thema: Thema der Arbeit
+schlagworte: Spezifische, Schlagworte, zur, Ausarbeitung
+zusammenfassung: Lorem Ipsum
+autor: Max Mustermann
+ausgabedatum: 01.01.1999
+abgabedatum: 01.02.1999
+autorStrasse: Musterstrasse 1
+autorPLZ: 99999 
+autorOrt:  Musterstadt
+autorGeburtsort: Musterstadt
+autorGeburtsdatum: 01.01.1990
+prueferA: Prof. Dr. Max 
+prueferB: Prof. Dr. Moritz
+firma: HTWG Konstanz
+studiengang: Angewandtes Markdown, Vertiefungsrichtung Pandoc
+
+
+lang: de
+bib: true
+toc: true
+lof: true
+documentclass: report
+pagenumberstyle_before: Roman
+pagenumberstyle_thesis: arabic
+mainfont: abc
+fontsize: 12pt
+geometry: margin=3cm
+papersize: a4paper
+fontfamily: libertine
+---
+
