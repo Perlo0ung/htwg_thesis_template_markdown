@@ -2,6 +2,12 @@
 
 Dies ist ein Template zum Schreiben der Bachelor/Masterarbeit an der Htwg Konstanz mit Markdown.
 
+## Benötigte Software:
+
+* Pandoc
+* MikTex
+* (Python)
+
 ## Aufbau:
 
 * __chapters:__  Enthält die Markdown-Dateien der eingentlichen Kapitel 
