@@ -1,6 +1,6 @@
 # Htwg Konstanz Thesis Template
 
-Dies ist ein Template zum Schreiben der Bachelor/Masterarbeit an der Htwg Konstanz mit Markdown.
+Dies ist ein Template zum Schreiben der Bachelor/Masterarbeit an der Htwg Konstanz mit dem Markdown Syntax.
 
 ## Benötigte Software:
 
@@ -56,9 +56,11 @@ pandoc -p
 * Jedes Markdowndokument mit einer leeren Zeile abschließen
 * Kapitel die nicht als Chapter erkannt werden sollen müssen mit Latech definiert werden (siehe 998-thx.md)
 * Das Quellenverzechnis wird automatisch am Ende angefügt, dafür muss ein Markdown Dokument vorhanden sein (999-literatur.md)
+* Bildergrößen lassen sich nur über Latex Imageinput Kommandos definieren, sollte man den Markdown Syntax verwenden muss das Bild bereits auf die richtige Größe skaliert sein.
 
 ## Known Bugs
 
 * ```settings.yaml``` erlaubt keine deutschen Umlaute (ä ö ü ß), dies kann umgangen werden in dem man die jeweilige Einstellung per ```\renewcommand``` in ```resources\startthesis.tex``` überschreibt.
 * Pandoc erlaubt es nicht Kapitel nach dem Quellenverzeichnis einzufügen, um dies zu bewerkstelligen muss jeglicher Anhang als Latech über den  ```--include-after-body``` Mechanismus angefügt werden. (Siehe https://github.com/jgm/pandoc/issues/771)
+
 
