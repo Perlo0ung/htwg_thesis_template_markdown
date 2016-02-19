@@ -36,6 +36,7 @@ cmd_string ="pandoc -p -f markdown \
             --chapters \
             --number-sections \
             --include-before-body=resources/startthesis.tex \
+            --include-after-body=resources/appendix.tex \
             --template=resources/ba_template.tex \
             -o %s/%s \
             --bibliography resources/thesis.bib \
