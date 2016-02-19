@@ -1,6 +1,3 @@
-chapters_folder = "chapters"
-
-
 import os, sys, re
 from datetime import datetime
 
