@@ -27,4 +27,6 @@ Der Style der Arbeit ist definiert durch die Datei ```resources/ba_template.tex`
 
 ## Known Bugs
 
-```settings.yaml``` erlaubt keine deutschen Umlaute (ä ö ü ß), dies kann umgangen werden in dem man die jeweilige Einstellung per ```\renewcommand``` in ```resources\startthesis.tex``` überschreibt.
+* ```settings.yaml``` erlaubt keine deutschen Umlaute (ä ö ü ß), dies kann umgangen werden in dem man die jeweilige Einstellung per ```\renewcommand``` in ```resources\startthesis.tex``` überschreibt.
+* Pandoc erlaubt es nicht Kapitel nach dem Quellenverzeichnis einzufügen, um dies zu bewerkstelligen muss jeglicher Anhang als Latech über den  ```--include-after-body``` Mechanismus angefügt werden. (Siehe https://github.com/jgm/pandoc/issues/771)
+
