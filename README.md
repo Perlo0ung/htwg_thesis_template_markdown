@@ -49,6 +49,7 @@ pandoc -p
 
 * Jedes Markdowndokument mit einer leeren Zeile abschließen
 * Kapitel die nicht als Chapter erkannt werden sollen müssen mit Latech definiert werden (siehe 998-thx.md)
+* Das Quellenverzechnis wird automatisch am Ende angefügt, dafür muss ein Markdown Dokument vorhanden sein (999-literatur.md)
 
 ## Known Bugs
 
