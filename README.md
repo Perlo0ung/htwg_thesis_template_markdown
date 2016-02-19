@@ -4,8 +4,8 @@ Dies ist ein Template zum Schreiben der Bachelor/Masterarbeit an der Htwg Konsta
 
 ## Benötigte Software:
 
-* Pandoc
-* MikTex
+* __Pandoc__
+* __MikTex__
 * (Python)
 
 ## Aufbau:
@@ -16,7 +16,7 @@ Dies ist ein Template zum Schreiben der Bachelor/Masterarbeit an der Htwg Konsta
 * __resources:__ Deckblatt-Vorlage der HTWG im tex-Format
 * __result:__ Ergebnis der Umwandlung von Pandoc
 
-Die eigentlichen Kapitel werden als Markdown-Dateien geschrieben und mit dem Program__Pandoc__ zu einem PDF umgewandelt. Für Features die nicht von Markdown unterstützt werden, kann Latech-Code verwendet werden. Die vorhandenen Kapitel geben darüber Auskunft wie Code, Bilder, Fußnoten usw. im Dokument eingebaut werden.
+Die eigentlichen Kapitel werden als Markdown-Dateien geschrieben und mit dem Program __Pandoc__ zu einem PDF umgewandelt. Für Features die nicht von Markdown unterstützt werden, kann Latech-Code verwendet werden. Die vorhandenen Kapitel geben darüber Auskunft wie Code, Bilder, Fußnoten usw. im Dokument eingebaut werden.
 
 ## Einstellungen der Arbeit
 
