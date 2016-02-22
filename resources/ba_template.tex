@@ -8,8 +8,8 @@
 \usepackage{listings}
 \usepackage{caption}
 \usepackage{chngcntr}
-
 \pagestyle{fancy}
+\usepackage{csquotes}
 
 % Thesis Stuff
 \newcommand{\thema}{$thema$}
@@ -27,10 +27,15 @@
 \newcommand{\prueferB}{$prueferB$}
 \newcommand{\firma}{$firma$}
 \newcommand{\studiengang}{$studiengang$}
-\newcommand{\fakultaet}{$fakultaet$}
 \renewcommand{\lstlistingname}{Auflistung} %rename listing
 
+%markdown codeblock size
+\makeatletter
+\def\verbatim{\footnotesize\@verbatim \frenchspacing\@vobeyspaces \@xverbatim}
+\makeatother
+
 %document settings
+\MakeOuterQuote{"}
 \counterwithout{footnote}{chapter} %dont reset footnotes in new chapter
 
 \definecolor{gray75}{gray}{0.75}
