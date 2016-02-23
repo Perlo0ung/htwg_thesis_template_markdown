@@ -31,7 +31,7 @@ Der Style der Arbeit ist definiert durch die Datei ```resources/ba_template.tex`
 
 Entweder:
 
-* Sript nutzen ```python build.py```
+* Script nutzen ```python build.py```
 
 oder:
 
@@ -55,7 +55,7 @@ pandoc -p
 
 * Jedes Markdowndokument mit einer leeren Zeile abschließen
 * Kapitel die nicht als Chapter erkannt werden sollen müssen mit Latech definiert werden (siehe 998-thx.md)
-* Das Quellenverzechnis wird automatisch am Ende angefügt, dafür muss ein Markdown Dokument vorhanden sein (999-literatur.md)
+* Das Quellenverzeichnis wird automatisch am Ende angefügt, dafür muss ein Markdown Dokument vorhanden sein (999-literatur.md)
 * Bildergrößen lassen sich nur über Latex Imageinput Kommandos definieren, sollte man den Markdown Syntax verwenden muss das Bild bereits auf die richtige Größe skaliert sein.
 
 ## Known Bugs
