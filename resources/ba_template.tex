@@ -8,7 +8,6 @@
 \usepackage{listings}
 \usepackage{caption}
 \usepackage{chngcntr}
-\pagestyle{fancy}
 \usepackage{csquotes}
 
 % Thesis Stuff
@@ -43,10 +42,6 @@
 \newcommand{\titleSpace}{\hspace{0.6em}}
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\chaptertitlename{} \thechapter\titleSpace\textcolor{gray75}\titleSpace}{0pt}{}
 \titlespacing*{\chapter}{0pt}{*4}{*3} % *n is an abbreviation for n ex
-
-\fancyhead[LE,RO]{\slshape \rightmark}
-\fancyhead[LO,RE]{\slshape \leftmark}
-\fancyfoot[C]{\thepage}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
@@ -133,6 +128,13 @@ $endif$
 $if(geometry)$
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
 $endif$
+
+% set fancyheader after geometry change so that widht/height is good
+\pagestyle{fancy}
+\fancyhead[LE,RO]{\slshape \rightmark}
+\fancyhead[LO,RE]{\slshape \leftmark}
+\fancyfoot[C]{\thepage}
+
 \makeatletter
 \@ifpackageloaded{hyperref}{}{%
 \ifxetex
