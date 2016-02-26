@@ -130,8 +130,10 @@ $if(geometry)$
 $endif$
 
 % set fancyheader after geometry change so that widht/height is good
+% fancy header/footer
+\fancyhead{}
+\fancyfoot{}
 \pagestyle{fancy}
-\fancyhead[LE,RO]{\slshape \rightmark}
 \fancyhead[LO,RE]{\slshape \leftmark}
 \fancyfoot[C]{\thepage}
 
@@ -291,6 +293,9 @@ $endif$
 $if(lof)$
 \listoffigures
 $endif$
+
+% add rightmark to fancyhdr after lists have been inserted
+\fancyhead[LE,RO]{\slshape \rightmark}
 
 % Make sure new page starts
 \cleardoublepage
