@@ -29,5 +29,9 @@ fontsize: 12pt
 geometry: margin=3cm,headsep=.5cm,headheight=.5cm
 papersize: a4paper
 fontfamily: libertine
+
+# color of reference links and online urls, uncomment if u want them to be black, or change to any color u want
+# linkcolor: black 
+# urlcolor: black
 ---
 
