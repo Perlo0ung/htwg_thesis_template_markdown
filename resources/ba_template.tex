@@ -134,7 +134,9 @@ $endif$
 \fancyhead{}
 \fancyfoot{}
 \pagestyle{fancy}
-\fancyhead[LO,RE]{\slshape \leftmark}
+\renewcommand\sectionmark[1]{\markright{\thesection\ #1}}
+\renewcommand\chaptermark[1]{\markboth{ \chaptername\ \thechapter \ #1}{}}
+\fancyhead[LO,RE]{\MakeUppercase{\slshape \leftmark}}
 \fancyfoot[C]{\thepage}
 
 \makeatletter
