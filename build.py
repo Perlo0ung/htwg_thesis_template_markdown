@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 import os, sys, re
 from datetime import datetime
 
@@ -42,4 +44,5 @@ cmd_string ="pandoc -p -f markdown \
 
 getRemoveOldResults()
 os.system(cmd_string)
-os.startfile(os.path.join("result", resultfile))
+if sys.platform.startswith("win"):
+    os.startfile(os.path.join("result", resultfile))
