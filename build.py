@@ -5,7 +5,7 @@ from datetime import datetime
 
 # getdatetime
 now = datetime.now().strftime('%Y%m%d%H%M%S')
- 
+
 # settings
 chapters_folder = "chapters"
 result_folder = "result"
@@ -21,20 +21,19 @@ def getChapters():
             print(filename)
             chapters += "%s/%s " % (chapters_folder, filename)
     return chapters
-    
+
 def getRemoveOldResults():
-    fileData = {}
-  
+    fileData = {} 
     if os.path.exists(result_folder):
       for fname in os.listdir(result_folder):
           fileData[fname] = os.stat(os.path.join(result_folder,fname)).st_mtime
       sortedFiles = sorted(fileData.items())
       for file in range(0, len(sortedFiles) - keep_oldresult):
           os.remove(os.path.join(result_folder,sortedFiles[file][0]))
-    
+
 cmd_string ="pandoc -p -f markdown \
             --csl=resources/ieee.csl \
-            --chapters \
+            --top-level-division=chapter \
             --number-sections \
             --include-before-body=resources/startthesis.tex \
             --include-after-body=resources/appendix.tex \
@@ -45,6 +44,8 @@ cmd_string ="pandoc -p -f markdown \
 
 
 getRemoveOldResults()
+if not os.path.exists(result_folder):
+    os.makedirs(result_folder)
 os.system(cmd_string)
 if sys.platform.startswith("win"):
     os.startfile(os.path.join("result", resultfile))
