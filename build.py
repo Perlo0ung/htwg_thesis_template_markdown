@@ -23,13 +23,13 @@ def getChapters():
     return chapters
 
 def getRemoveOldResults():
-    fileData = {}
+    fileData = {} 
     if os.path.exists(result_folder):
-	for fname in os.listdir(result_folder):
-            fileData[fname] = os.stat(os.path.join(result_folder,fname)).st_mtime
-        sortedFiles = sorted(fileData.items())
-        for file in range(0, len(sortedFiles) - keep_oldresult):
-            os.remove(os.path.join(result_folder,sortedFiles[file][0]))
+      for fname in os.listdir(result_folder):
+          fileData[fname] = os.stat(os.path.join(result_folder,fname)).st_mtime
+      sortedFiles = sorted(fileData.items())
+      for file in range(0, len(sortedFiles) - keep_oldresult):
+          os.remove(os.path.join(result_folder,sortedFiles[file][0]))
 
 cmd_string ="pandoc -p -f markdown \
             --csl=resources/ieee.csl \
