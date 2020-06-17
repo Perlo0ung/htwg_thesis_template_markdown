@@ -33,5 +33,8 @@ fontfamily: libertine
 # color of reference links and online urls, uncomment if u want them to be black, or change to any color u want
 # linkcolor: black 
 # urlcolor: black
+
+# References as link to the corresponding entry in the bibliography
+# link-citations: true
 ---
 
