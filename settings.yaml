@@ -19,8 +19,12 @@ studiengang: Angewandtes Markdown, Vertiefungsrichtung Pandoc
 
 lang: de
 bib: true
-toc: true
+# table of contents
+toc: true 
+# table of figures
 lof: true
+# list of tables
+lot: true
 documentclass: report
 pagenumberstyle_before: Roman
 pagenumberstyle_thesis: arabic
