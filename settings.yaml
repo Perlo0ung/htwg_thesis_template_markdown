@@ -21,7 +21,7 @@ lang: de
 bib: true
 # table of contents
 toc: true 
-# table of figures
+# list of figures
 lof: true
 # list of tables
 lot: true
