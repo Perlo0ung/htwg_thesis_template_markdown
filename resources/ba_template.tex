@@ -10,6 +10,16 @@
 \usepackage{chngcntr}
 \usepackage{csquotes}
 
+% in order to get rid of error: "! LaTeX Error: Environment cslreferences undefined."
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+{$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+\everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+{\par}
+$endif$
+
 %markdown codeblock size
 \makeatletter
 \def\verbatim{\footnotesize\@verbatim \frenchspacing\@vobeyspaces \@xverbatim}
